@@ -1,363 +1,404 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AppointmentPro | Streamline Your Schedule</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <style></style>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <a href="#" class="logo">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12Z" stroke="#1C274C" stroke-width="1.5"></path> <path d="M7 4V2.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M17 4V2.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2.5 9H21.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17C16 16.4477 16.4477 16 17 16C17.5523 16 18 16.4477 18 17Z" fill="#1C274C"></path> <path d="M18 13C18 13.5523 17.5523 14 17 14C16.4477 14 16 13.5523 16 13C16 12.4477 16.4477 12 17 12C17.5523 12 18 12.4477 18 13Z" fill="#1C274C"></path> <path d="M13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17Z" fill="#1C274C"></path> <path d="M13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13Z" fill="#1C274C"></path> <path d="M8 17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17C6 16.4477 6.44772 16 7 16C7.55228 16 8 16.4477 8 17Z" fill="#1C274C"></path> <path d="M8 13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13C6 12.4477 6.44772 12 7 12C7.55228 12 8 12.4477 8 13Z" fill="#1C274C"></path> </g></svg>
-        AppointmentPro
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#home" data-i18n="nav.home">Home</a></li>
-          <li><a href="#features" data-i18n="nav.services">Services</a></li>
-          <li><a href="#pricing" data-i18n="nav.about">About</a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="#login" data-i18n="nav.login">Login</a></li>
-          <li>
-            <a href="#signup" class="btn btn-primary" data-i18n="nav.getStarted"
-              >Get Started</a
-            >
-          </li>
-          <li>
-            <button
-              id="language-toggle"
-              class="btn-language"
-              title="Toggle Language"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <path
-                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                ></path>
-                <path d="M2 12h20"></path>
-              </svg>
-              <span data-i18n="nav.language">EN</span>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1 data-i18n="hero.title">
-          Streamline Your Schedule with Effortless Booking
-        </h1>
-        <p data-i18n="hero.description">
-          The all-in-one platform for admins, staff, and clients to manage
-          appointments efficiently. Say goodbye to scheduling conflicts.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppointmentPro | Streamline Your Schedule</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style></style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12Z"
+            stroke="#1C274C" stroke-width="1.5"></path>
+          <path d="M7 4V2.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+          <path d="M17 4V2.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+          <path d="M2.5 9H21.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+          <path
+            d="M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17C16 16.4477 16.4477 16 17 16C17.5523 16 18 16.4477 18 17Z"
+            fill="#1C274C"></path>
+          <path
+            d="M18 13C18 13.5523 17.5523 14 17 14C16.4477 14 16 13.5523 16 13C16 12.4477 16.4477 12 17 12C17.5523 12 18 12.4477 18 13Z"
+            fill="#1C274C"></path>
+          <path
+            d="M13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17Z"
+            fill="#1C274C"></path>
+          <path
+            d="M13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13Z"
+            fill="#1C274C"></path>
+          <path
+            d="M8 17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17C6 16.4477 6.44772 16 7 16C7.55228 16 8 16.4477 8 17Z"
+            fill="#1C274C"></path>
+          <path
+            d="M8 13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13C6 12.4477 6.44772 12 7 12C7.55228 12 8 12.4477 8 13Z"
+            fill="#1C274C"></path>
+        </g>
+      </svg>
+      AppointmentPro
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#features" data-i18n="nav.services">Services</a></li>
+        <li><a href="#" data-i18n="nav.about">About</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#login" data-i18n="nav.login">Login</a></li>
+        <li>
+          <a href="#signup" class="btn btn-primary" data-i18n="nav.getStarted">Get Started</a>
+        </li>
+        <li>
+          <button id="language-toggle" class="btn-language" title="Toggle Language">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+              <path d="M2 12h20"></path>
+            </svg>
+            <span data-i18n="nav.language">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero.title">
+        Streamline Your Schedule with Effortless Booking
+      </h1>
+      <p data-i18n="hero.description">
+        The all-in-one platform for admins, staff, and clients to manage
+        appointments efficiently. Say goodbye to scheduling conflicts.
+      </p>
+      <div class="hero-actions">
+        <a href="#signup" class="btn btn-primary" data-i18n="hero.bookNow">Book Now</a>
+        <a href="#features" class="btn btn-outline" data-i18n="hero.learnMore">Learn More</a>
+      </div>
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                fill="currentColor" />
+              <path d="M12 7C10.34 7 9 8.34 9 10C9 11.66 10.34 13 12 13C13.66 13 15 11.66 15 10C15 8.34 13.66 7 12 7Z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <span data-i18n="hero.stat1">Trusted by 15,000+ professionals</span>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                fill="currentColor" />
+              <path d="M12 7C10.34 7 9 8.34 9 10C9 11.66 10.34 13 12 13C13.66 13 15 11.66 15 10C15 8.34 13.66 7 12 7Z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <span data-i18n="hero.stat2">99.8% uptime</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./img/pic_doc.png" alt="Modern office meeting room" />
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <h2 class="section-title" data-i18n="features.title">
+      Why Choose AppointmentPro?
+    </h2>
+    <p class="section-subtitle" data-i18n="features.subtitle">
+      Comprehensive tools designed to make appointment management seamless for
+      everyone involved.
+    </p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3 data-i18n="features.calendar.title">Calendar Management</h3>
+        <p data-i18n="features.calendar.description">
+          Effortlessly organize your day with our intuitive drag-and-drop
+          calendar interface. Syncs with Google and Outlook.
         </p>
-        <div class="hero-actions">
-          <a href="#signup" class="btn btn-primary" data-i18n="hero.bookNow"
-            >Book Now</a
-          >
-          <a href="#features" class="btn btn-outline" data-i18n="hero.learnMore"
-            >Learn More</a
-          >
-        </div>
-        <div class="stats">
-          <div class="stat-item">
-            <div class="stat-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M12 7C10.34 7 9 8.34 9 10C9 11.66 10.34 13 12 13C13.66 13 15 11.66 15 10C15 8.34 13.66 7 12 7Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <span data-i18n="hero.stat1">Trusted by 15,000+ professionals</span>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M12 7C10.34 7 9 8.34 9 10C9 11.66 10.34 13 12 13C13.66 13 15 11.66 15 10C15 8.34 13.66 7 12 7Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <span data-i18n="hero.stat2">99.8% uptime</span>
-          </div>
-        </div>
       </div>
-      <div class="hero-image">
-        <img
-          src="./img/pic_doc.png"
-          alt="Modern office meeting room"
-        />
+      <div class="feature-card">
+        <h3 data-i18n="features.notifications.title">
+          Real-time Notifications
+        </h3>
+        <p data-i18n="features.notifications.description">
+          Stay updated with instant SMS and Email alerts for new bookings,
+          cancellations, and changes. Never miss a client.
+        </p>
       </div>
-    </section>
+      <div class="feature-card">
+        <h3 data-i18n="features.staff.title">Staff Allocation</h3>
+        <p data-i18n="features.staff.description">
+          Manage team schedules and assign appointments to specific staff
+          members with ease. Track performance and hours.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Features Section -->
-    <section id="features" class="section">
-      <h2 class="section-title" data-i18n="features.title">
-        Why Choose AppointmentPro?
-      </h2>
-      <p class="section-subtitle" data-i18n="features.subtitle">
-        Comprehensive tools designed to make appointment management seamless for
-        everyone involved.
-      </p>
+  <!-- Pricing Section -->
+  <section id="pricing" class="section pricing">
+    <h2 class="pricing-title" data-i18n="pricing.title">
+      Simple, Transparent Pricing
+    </h2>
+    <p class="pricing-subtitle" data-i18n="pricing.subtitle">
+      Choose the plan that fits your business needs.
+    </p>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3 data-i18n="features.calendar.title">Calendar Management</h3>
-          <p data-i18n="features.calendar.description">
-            Effortlessly organize your day with our intuitive drag-and-drop
-            calendar interface. Syncs with Google and Outlook.
+    <div class="pricing-cards">
+      <!-- Starter -->
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3 data-i18n="pricing.starter.name">Starter</h3>
+          <div class="price">$0 <span>/mo</span></div>
+          <p data-i18n="pricing.starter.description">
+            Perfect for individuals just starting out.
           </p>
         </div>
-        <div class="feature-card">
-          <h3 data-i18n="features.notifications.title">
-            Real-time Notifications
-          </h3>
-          <p data-i18n="features.notifications.description">
-            Stay updated with instant SMS and Email alerts for new bookings,
-            cancellations, and changes. Never miss a client.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3 data-i18n="features.staff.title">Staff Allocation</h3>
-          <p data-i18n="features.staff.description">
-            Manage team schedules and assign appointments to specific staff
-            members with ease. Track performance and hours.
-          </p>
+        <div class="pricing-body">
+          <ul class="pricing-features">
+            <li data-i18n="pricing.starter.feature1">1 Admin Account</li>
+            <li data-i18n="pricing.starter.feature2">5 Unlimited Clients</li>
+            <li data-i18n="pricing.starter.feature3">Basic Calendar</li>
+          </ul>
+          <a href="#" class="btn btn-outline pricing-cta" data-i18n="pricing.starter.cta">Start Free</a>
         </div>
       </div>
-    </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="section pricing">
-      <h2 class="pricing-title" data-i18n="pricing.title">
-        Simple, Transparent Pricing
-      </h2>
-      <p class="pricing-subtitle" data-i18n="pricing.subtitle">
-        Choose the plan that fits your business needs.
-      </p>
-
-      <div class="pricing-cards">
-        <!-- Starter -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 data-i18n="pricing.starter.name">Starter</h3>
-            <div class="price">$0 <span>/mo</span></div>
-            <p data-i18n="pricing.starter.description">
-              Perfect for individuals just starting out.
-            </p>
-          </div>
-          <div class="pricing-body">
-            <ul class="pricing-features">
-              <li data-i18n="pricing.starter.feature1">1 Admin Account</li>
-              <li data-i18n="pricing.starter.feature2">5 Unlimited Clients</li>
-              <li data-i18n="pricing.starter.feature3">Basic Calendar</li>
-            </ul>
-            <a
-              href="#"
-              class="btn btn-outline pricing-cta"
-              data-i18n="pricing.starter.cta"
-              >Start Free</a
-            >
-          </div>
+      <!-- Professional (Popular) -->
+      <div class="pricing-card popular">
+        <div class="popular-badge" data-i18n="pricing.popular">
+          MOST POPULAR
         </div>
-
-        <!-- Professional (Popular) -->
-        <div class="pricing-card popular">
-          <div class="popular-badge" data-i18n="pricing.popular">
-            MOST POPULAR
-          </div> 
-          <div class="pricing-header">
-            <h3 data-i18n="pricing.professional.name">Professional</h3>
-            <div class="price">$29 <span>/mo</span></div>
-            <p data-i18n="pricing.professional.description">
-              For growing teams needing more power.
-            </p>
-          </div>
-          <div class="pricing-body">
-            <ul class="pricing-features">
-              <li data-i18n="pricing.professional.feature1">5 Staff Members</li>
-              <li data-i18n="pricing.professional.feature2">SMS Reminders</li>
-              <li data-i18n="pricing.professional.feature3">
-                Advanced Reporting
-              </li>
-              <li data-i18n="pricing.professional.feature4">
-                Google Calendar Sync
-              </li>
-            </ul>
-            <a
-              href="#"
-              class="btn btn-primary pricing-cta"
-              data-i18n="pricing.professional.cta"
-              >Get Started</a
-            >
-          </div>
+        <div class="pricing-header">
+          <h3 data-i18n="pricing.professional.name">Professional</h3>
+          <div class="price">$29 <span>/mo</span></div>
+          <p data-i18n="pricing.professional.description">
+            For growing teams needing more power.
+          </p>
         </div>
-
-        <!-- Enterprise -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 data-i18n="pricing.enterprise.name">Enterprise</h3>
-            <div class="price">$99 <span>/mo</span></div>
-            <p data-i18n="pricing.enterprise.description">
-              Full control for large organizations.
-            </p>
-          </div>
-          <div class="pricing-body">
-            <ul class="pricing-features">
-              <li data-i18n="pricing.enterprise.feature1">Unlimited Staff</li>
-              <li data-i18n="pricing.enterprise.feature2">API Access</li>
-              <li data-i18n="pricing.enterprise.feature3">Dedicated Support</li>
-              <li data-i18n="pricing.enterprise.feature4">
-                Custom Integrations
-              </li>
-            </ul>
-            <a
-              href="#"
-              class="btn btn-outline pricing-cta"
-              data-i18n="pricing.enterprise.cta"
-              >Contact Sales</a
-            >
-          </div>
+        <div class="pricing-body">
+          <ul class="pricing-features">
+            <li data-i18n="pricing.professional.feature1">5 Staff Members</li>
+            <li data-i18n="pricing.professional.feature2">SMS Reminders</li>
+            <li data-i18n="pricing.professional.feature3">
+              Advanced Reporting
+            </li>
+            <li data-i18n="pricing.professional.feature4">
+              Google Calendar Sync
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary pricing-cta" data-i18n="pricing.professional.cta">Get Started</a>
         </div>
       </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-      <h2 data-i18n="cta.title">Ready to organize your business?</h2>
-      <p data-i18n="cta.description">
-        Join thousands of professionals who trust AppointmentPro to manage their
-        time and grow their business.
-      </p>
-      <a href="#signup" class="btn btn-white" data-i18n="cta.button"
-        >Start Your Free Trial</a
-      >
-      <p
-        style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8"
-        data-i18n="cta.note"
-      >
-        No credit card required. Cancel anytime.
-      </p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4 data-i18n="footer.brand">AppointmentPro</h4>
-          <p data-i18n="footer.description">
-            Making appointment scheduling effortless for businesses of all
-            sizes. Built with love for productivity.
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3 data-i18n="pricing.enterprise.name">Enterprise</h3>
+          <div class="price">$99 <span>/mo</span></div>
+          <p data-i18n="pricing.enterprise.description">
+            Full control for large organizations.
           </p>
-          <div style="display: flex; flex-flow: row wrap; justify-content:flex-start; align-items: center; margin-top: 1rem;">
-            <span><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> <defs> <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> <stop stop-color="#B13589"></stop> <stop offset="0.79309" stop-color="#C62F94"></stop> <stop offset="1" stop-color="#8A3AC8"></stop> </radialGradient> <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> <stop stop-color="#E0E8B7"></stop> <stop offset="0.444662" stop-color="#FB8A2E"></stop> <stop offset="0.71474" stop-color="#E2425C"></stop> <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> </radialGradient> <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> <stop offset="0.156701" stop-color="#406ADC"></stop> <stop offset="0.467799" stop-color="#6A45BE"></stop> <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> </radialGradient> </defs> </g></svg></span>
-            <span><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg></span>
-          </div>
         </div>
+        <div class="pricing-body">
+          <ul class="pricing-features">
+            <li data-i18n="pricing.enterprise.feature1">Unlimited Staff</li>
+            <li data-i18n="pricing.enterprise.feature2">API Access</li>
+            <li data-i18n="pricing.enterprise.feature3">Dedicated Support</li>
+            <li data-i18n="pricing.enterprise.feature4">
+              Custom Integrations
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline pricing-cta" data-i18n="pricing.enterprise.cta">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="footer-col">
-          <h4 data-i18n="footer.product">Product</h4>
-          <ul>
-            <li><a href="#" data-i18n="footer.features">Features</a></li>
-            <li><a href="#" data-i18n="footer.pricing">Pricing</a></li>
-            <li>
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2 data-i18n="cta.title">Ready to organize your business?</h2>
+    <p data-i18n="cta.description">
+      Join thousands of professionals who trust AppointmentPro to manage their
+      time and grow their business.
+    </p>
+    <a href="#signup" class="btn btn-white" data-i18n="cta.button">Start Your Free Trial</a>
+    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8" data-i18n="cta.note">
+      No credit card required. Cancel anytime.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 data-i18n="footer.brand">AppointmentPro</h4>
+        <p data-i18n="footer.description">
+          Making appointment scheduling effortless for businesses of all
+          sizes. Built with love for productivity.
+        </p>
+        <div
+          style="display: flex; flex-flow: row wrap; justify-content:flex-start; align-items: center; margin-top: 1rem;">
+          <span><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect>
+                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect>
+                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect>
+                <path
+                  d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                  fill="white"></path>
+                <defs>
+                  <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                    <stop stop-color="#B13589"></stop>
+                    <stop offset="0.79309" stop-color="#C62F94"></stop>
+                    <stop offset="1" stop-color="#8A3AC8"></stop>
+                  </radialGradient>
+                  <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                    <stop stop-color="#E0E8B7"></stop>
+                    <stop offset="0.444662" stop-color="#FB8A2E"></stop>
+                    <stop offset="0.71474" stop-color="#E2425C"></stop>
+                    <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop>
+                  </radialGradient>
+                  <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                    <stop offset="0.156701" stop-color="#406ADC"></stop>
+                    <stop offset="0.467799" stop-color="#6A45BE"></stop>
+                    <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop>
+                  </radialGradient>
+                </defs>
+              </g>
+            </svg></span>
+          <span><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                  fill="#BFC8D0"></path>
+                <path
+                  d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                  fill="url(#paint0_linear_87_7264)"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                  fill="white"></path>
+                <path
+                  d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                  fill="white"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#5BD066"></stop>
+                    <stop offset="1" stop-color="#27B43E"></stop>
+                  </linearGradient>
+                </defs>
+              </g>
+            </svg></span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Product</h4>
+        <ul>
+          <li><a href="#features" data-i18n="footer.features">Features</a></li>
+          <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
+          <!--<li>
               <a href="#" data-i18n="footer.integrations">Integrations</a>
             </li>
             <li><a href="#" data-i18n="footer.changelog">Changelog</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 data-i18n="footer.company">Company</h4>
-          <ul>
-            <li><a href="#" data-i18n="footer.about">About Us</a></li>
-            <li><a href="#" data-i18n="footer.careers">Careers</a></li>
-            <li><a href="#" data-i18n="footer.blog">Blog</a></li>
-            <li><a href="#" data-i18n="footer.contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 data-i18n="footer.legal">Legal</h4>
-          <ul>
-            <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
-            <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
-            <li><a href="#" data-i18n="footer.security">Security</a></li>
-          </ul>
-        </div>
+          </ul>-->
       </div>
 
-      <div class="copyright">
-        <span class="copyTex"> &copy; 2026 AppointmentPro By AlejoDev. All rights reserved.</span>
-        <span style="float: right">
-          <button id="lang-en" class="lang-option" data-lang="en">
-            English
-          </button>
-          |
-          <button id="lang-es" class="lang-option" data-lang="es">
-            Español
-          </button>
-        </span>
+      <div class="footer-col">
+        <h4 data-i18n="footer.company">Company</h4>
+        <ul>
+          <li><a href="#" data-i18n="footer.about" id="buttonModal">About Us</a></li>
+          <!-- <li><a href="#" data-i18n="footer.careers">Careers</a></li>-->
+          <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+          <li><a href="#" data-i18n="footer.contact">Contact</a></li>
+        </ul>
       </div>
-    </footer>
 
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
-      <svg
-        width="24"
-        height="40"
-        viewBox="0 0 24 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 2L12 38"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <path
-          d="M12 38L8 34"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <path
-          d="M12 38L16 34"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-      </svg>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <ul>
+          <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+          <li><a href="#" data-i18n="footer.security">Security</a></li>
+        </ul>
+      </div>
     </div>
 
-    <script src="js/i18n.js"></script>
-    <script src="js/animations.js"></script>
-  </body>
+    <div class="copyright">
+      <span class="copyTex"> &copy; 2026 AppointmentPro By AlejoDev. All rights reserved.</span>
+      <span style="float: right">
+        <button id="lang-en" class="lang-option" data-lang="en">
+          English
+        </button>
+        |
+        <button id="lang-es" class="lang-option" data-lang="es">
+          Español
+        </button>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <svg width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L12 38" stroke="white" stroke-width="2" stroke-linecap="round" />
+      <path d="M12 38L8 34" stroke="white" stroke-width="2" stroke-linecap="round" />
+      <path d="M12 38L16 34" stroke="white" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <!--ABOUT MODAL START-->
+  <div class="container_modal" id="myModal">
+    <div class="main">
+      <span id="closeBtn">&times</span>
+      <h1 class="title_modal">About us</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque non repudiandae. Pariatur nobis
+        corrupti adipisci unde dolores fugiat, cumque, sint dolorem, voluptate illum ullam veritatis vel non.
+        Necessitatibus, deserunt.</p>
+    </div>
+  </div>
+
+  <!--ABOUT MODAL END-->
+
+  <!--CONTACT MODAL START-->
+
+  <!--CONTACT MODAL START-->
+
+  <script src="js/i18n.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
 </html>
