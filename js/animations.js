@@ -66,21 +66,34 @@ img.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6
 
 
 
+/* ==============Modal Function ==============*/
+// Open modal buttons
+document.querySelectorAll("[data-modal]").forEach(button => {
+  button.addEventListener("click", e => {
+    e.preventDefault();
 
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("buttonModal");
-const closeBtn = document.getElementById("closeBtn");
+    const modalId = button.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
 
-btn.addEventListener("click", () => {
-  modal.style.display = "flex";
-})
+    modal.style.display = "flex";
+    document.body.classList.add("modal-open");
+  });
+});
 
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-})
+// Close buttons
+document.querySelectorAll(".closeBtn").forEach(close => {
+  close.addEventListener("click", () => {
+    close.closest(".container_modal").style.display = "none";
+    document.body.classList.remove("modal-open");
+  });
+});
 
-window.addEventListener("click", (e) => {
-  if(e.target === modal){
-    modal.style.display = "none";
-  }
+// Close when clicking outside
+document.querySelectorAll(".container_modal").forEach(modal => {
+  modal.addEventListener("click", e => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    }
+  });
 });

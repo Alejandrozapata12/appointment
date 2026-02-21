@@ -88,7 +88,54 @@ const translations = {
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       security: 'Security'
-    }
+    },
+modals: {
+  about: {
+    title: "About AppointmentPro",
+    subtitle: "Built by Alejandro · AlejoDev",
+    p1: "This appointment management system was designed and developed by Alejandro, a fullstack developer and creator of the personal brand AlejoDev.",
+    p2: "The platform aims to deliver a modern and scalable solution for businesses that require efficient scheduling, including clinics, consulting offices, beauty centers, and reservation-based services.",
+    featuresTitle: "Key Features",
+    f1: "Scalable architecture with modular structure",
+    f2: "Secure authentication with JWT",
+    f3: "Clear separation of responsibilities (MVC)",
+    f4: "Foundation prepared for SaaS evolution"
+  },
+
+  contact: {
+    title: "Contact",
+    subtitle: "Send a message to Alejandro · AlejoDev",
+    name: "Full Name",
+    email: "Email Address",
+    subject: "Subject",
+    message: "Message",
+    button: "Send Message"
+  },
+
+  privacy: {
+    title: "Privacy Policy",
+    p1: "We respect your privacy. All collected information is used solely to improve our services.",
+    p2: "We do not share personal data with third parties without your consent. We implement security measures to protect your information.",
+    p3: "You may request the deletion of your data at any time."
+  },
+
+  terms: {
+    title: "Terms of Service",
+    p1: "By using this site, you agree to comply with our rules and conditions.",
+    p2: "We reserve the right to modify content and services without prior notice.",
+    p3: "Improper use of the platform may result in suspension of access."
+  },
+
+  security: {
+    title: "Security",
+    p1: "We use modern security protocols to protect information.",
+    p2: "All transmitted data is encrypted using HTTPS.",
+    p3: "We regularly review our systems to prevent vulnerabilities."
+  }
+},
+copyright:{
+  title: "AppointmentPro © 2026 — Developed by AlejoDev. All rights reserved."
+}
   },
   es: {
     nav: {
@@ -178,7 +225,55 @@ const translations = {
       privacy: 'Política de Privacidad',
       terms: 'Términos de Servicio',
       security: 'Seguridad'
-    }
+    },
+    modals: {
+  about: {
+    title: "Sobre AppointmentPro",
+    subtitle: "Creado por Alejandro · AlejoDev",
+    p1: "Este sistema de gestión de citas fue diseñado y desarrollado por Alejandro, desarrollador fullstack y creador de la marca personal AlejoDev.",
+    p2: "La plataforma busca ofrecer una solución moderna y escalable para negocios que requieren gestión eficiente de agendas como clínicas, consultorios y centros de servicio.",
+    featuresTitle: "Características Clave",
+    f1: "Arquitectura escalable y modular",
+    f2: "Autenticación segura con JWT",
+    f3: "Separación clara de responsabilidades (MVC)",
+    f4: "Base preparada para evolucionar a SaaS"
+  },
+
+  contact: {
+    title: "Contacto",
+    subtitle: "Envía un mensaje a Alejandro · AlejoDev",
+    name: "Nombre Completo",
+    email: "Correo Electrónico",
+    subject: "Asunto",
+    message: "Mensaje",
+    button: "Enviar Mensaje"
+  },
+
+  privacy: {
+    title: "Política de Privacidad",
+    p1: "Respetamos tu privacidad. Toda la información recopilada se utiliza únicamente para mejorar nuestros servicios.",
+    p2: "No compartimos datos personales sin tu consentimiento. Implementamos medidas de seguridad para proteger tu información.",
+    p3: "Puedes solicitar la eliminación de tus datos en cualquier momento."
+  },
+
+  terms: {
+    title: "Términos de Servicio",
+    p1: "Al usar este sitio aceptas cumplir con nuestras normas y condiciones.",
+    p2: "Nos reservamos el derecho de modificar contenidos y servicios sin previo aviso.",
+    p3: "El uso indebido de la plataforma puede resultar en la suspensión del acceso."
+  },
+
+  security: {
+    title: "Seguridad",
+    p1: "Utilizamos protocolos modernos para proteger la información.",
+    p2: "Todos los datos transmitidos están cifrados mediante HTTPS.",
+    p3: "Revisamos periódicamente nuestros sistemas para prevenir vulnerabilidades."
+  }
+},
+
+copyright:{
+  title: "AppointmentPro © 2026 — Desarrollado por AlejoDev. Todos los derechos reservados."
+}
   }
 };
 

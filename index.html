@@ -154,85 +154,100 @@
     </div>
   </section>
 
+
   <!-- Pricing Section -->
-  <section id="pricing" class="section pricing">
+<section id="pricing" class="section pricing-modern">
+  <div class="pricing-header-wrap">
     <h2 class="pricing-title" data-i18n="pricing.title">
       Simple, Transparent Pricing
     </h2>
     <p class="pricing-subtitle" data-i18n="pricing.subtitle">
       Choose the plan that fits your business needs.
     </p>
+  </div>
 
-    <div class="pricing-cards">
-      <!-- Starter -->
-      <div class="pricing-card">
-        <div class="pricing-header">
-          <h3 data-i18n="pricing.starter.name">Starter</h3>
-          <div class="price">$0 <span>/mo</span></div>
-          <p data-i18n="pricing.starter.description">
-            Perfect for individuals just starting out.
-          </p>
+  <div class="pricing-grid">
+
+    <!-- Starter -->
+    <div class="pricing-card-modern">
+      <div class="card-top">
+        <h3 data-i18n="pricing.starter.name">Starter</h3>
+        <div class="price">
+          $0 <span>/mo</span>
         </div>
-        <div class="pricing-body">
-          <ul class="pricing-features">
-            <li data-i18n="pricing.starter.feature1">1 Admin Account</li>
-            <li data-i18n="pricing.starter.feature2">5 Unlimited Clients</li>
-            <li data-i18n="pricing.starter.feature3">Basic Calendar</li>
-          </ul>
-          <a href="#" class="btn btn-outline pricing-cta" data-i18n="pricing.starter.cta">Start Free</a>
-        </div>
+        <p class="card-desc" data-i18n="pricing.starter.description">
+          Perfect for individuals just starting out.
+        </p>
       </div>
 
-      <!-- Professional (Popular) -->
-      <div class="pricing-card popular">
-        <div class="popular-badge" data-i18n="pricing.popular">
-          MOST POPULAR
-        </div>
-        <div class="pricing-header">
-          <h3 data-i18n="pricing.professional.name">Professional</h3>
-          <div class="price">$29 <span>/mo</span></div>
-          <p data-i18n="pricing.professional.description">
-            For growing teams needing more power.
-          </p>
-        </div>
-        <div class="pricing-body">
-          <ul class="pricing-features">
-            <li data-i18n="pricing.professional.feature1">5 Staff Members</li>
-            <li data-i18n="pricing.professional.feature2">SMS Reminders</li>
-            <li data-i18n="pricing.professional.feature3">
-              Advanced Reporting
-            </li>
-            <li data-i18n="pricing.professional.feature4">
-              Google Calendar Sync
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary pricing-cta" data-i18n="pricing.professional.cta">Get Started</a>
-        </div>
-      </div>
+      <ul class="features">
+        <li data-i18n="pricing.starter.feature1">1 Admin Account</li>
+        <li data-i18n="pricing.starter.feature2">5 Unlimited Clients</li>
+        <li data-i18n="pricing.starter.feature3">Basic Calendar</li>
+      </ul>
 
-      <!-- Enterprise -->
-      <div class="pricing-card">
-        <div class="pricing-header">
-          <h3 data-i18n="pricing.enterprise.name">Enterprise</h3>
-          <div class="price">$99 <span>/mo</span></div>
-          <p data-i18n="pricing.enterprise.description">
-            Full control for large organizations.
-          </p>
-        </div>
-        <div class="pricing-body">
-          <ul class="pricing-features">
-            <li data-i18n="pricing.enterprise.feature1">Unlimited Staff</li>
-            <li data-i18n="pricing.enterprise.feature2">API Access</li>
-            <li data-i18n="pricing.enterprise.feature3">Dedicated Support</li>
-            <li data-i18n="pricing.enterprise.feature4">
-              Custom Integrations
-            </li>
-          </ul>
-          <a href="#" class="btn btn-outline pricing-cta" data-i18n="pricing.enterprise.cta">Contact Sales</a>
-        </div>
-      </div>
+      <a href="#" class="btn-outline-modern pricing-cta"
+         data-i18n="pricing.starter.cta">
+        Start Free
+      </a>
     </div>
-  </section>
+
+    <!-- Professional -->
+    <div class="pricing-card-modern featured">
+      <div class="featured-badge" data-i18n="pricing.popular">
+        MOST POPULAR
+      </div>
+
+      <div class="card-top">
+        <h3 data-i18n="pricing.professional.name">Professional</h3>
+        <div class="price">
+          $29 <span>/mo</span>
+        </div>
+        <p class="card-desc" data-i18n="pricing.professional.description">
+          For growing teams needing more power.
+        </p>
+      </div>
+
+      <ul class="features">
+        <li data-i18n="pricing.professional.feature1">5 Staff Members</li>
+        <li data-i18n="pricing.professional.feature2">SMS Reminders</li>
+        <li data-i18n="pricing.professional.feature3">Advanced Reporting</li>
+        <li data-i18n="pricing.professional.feature4">Google Calendar Sync</li>
+      </ul>
+
+      <a href="#" class="btn-primary-modern pricing-cta"
+         data-i18n="pricing.professional.cta">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="pricing-card-modern">
+      <div class="card-top">
+        <h3 data-i18n="pricing.enterprise.name">Enterprise</h3>
+        <div class="price">
+          $99 <span>/mo</span>
+        </div>
+        <p class="card-desc" data-i18n="pricing.enterprise.description">
+          Full control for large organizations.
+        </p>
+      </div>
+
+      <ul class="features">
+        <li data-i18n="pricing.enterprise.feature1">Unlimited Staff</li>
+        <li data-i18n="pricing.enterprise.feature2">API Access</li>
+        <li data-i18n="pricing.enterprise.feature3">Dedicated Support</li>
+        <li data-i18n="pricing.enterprise.feature4">Custom Integrations</li>
+      </ul>
+
+      <a href="#" class="btn-outline-modern pricing-cta"
+         data-i18n="pricing.enterprise.cta">
+        Contact Sales
+      </a>
+    </div>
+
+  </div>
+</section>
 
   <!-- CTA Section -->
   <section class="cta">
@@ -340,25 +355,25 @@
       <div class="footer-col">
         <h4 data-i18n="footer.company">Company</h4>
         <ul>
-          <li><a href="#" data-i18n="footer.about" id="buttonModal">About Us</a></li>
+          <li><a href="#" data-i18n="footer.about" data-modal="aboutModal">About Us</a></li>
           <!-- <li><a href="#" data-i18n="footer.careers">Careers</a></li>-->
           <li><a href="#" data-i18n="footer.blog">Blog</a></li>
-          <li><a href="#" data-i18n="footer.contact">Contact</a></li>
+          <li><a href="#" data-i18n="footer.contact" data-modal="contactModal">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4 data-i18n="footer.legal">Legal</h4>
         <ul>
-          <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
-          <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
-          <li><a href="#" data-i18n="footer.security">Security</a></li>
+          <li><a href="#" data-i18n="footer.privacy" data-modal="modal-privacidad">Privacy Policy</a></li>
+          <li><a href="#" data-i18n="footer.terms" data-modal="modal-terminos">Terms of Service</a></li>
+          <li><a href="#" data-i18n="footer.security" data-modal="modal-seguridad">Security</a></li>
         </ul>
       </div>
     </div>
 
     <div class="copyright">
-      <span class="copyTex"> &copy; 2026 AppointmentPro By AlejoDev. All rights reserved.</span>
+      <span class="copyTex" data-i18n="copyright.title">AppointmentPro © 2026 — Developed by AlejoDev. All rights reserved.</span>
       <span style="float: right">
         <button id="lang-en" class="lang-option" data-lang="en">
           English
@@ -380,22 +395,162 @@
     </svg>
   </div>
 
-  <!--ABOUT MODAL START-->
-  <div class="container_modal" id="myModal">
-    <div class="main">
-      <span id="closeBtn">&times</span>
-      <h1 class="title_modal">About us</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque non repudiandae. Pariatur nobis
-        corrupti adipisci unde dolores fugiat, cumque, sint dolorem, voluptate illum ullam veritatis vel non.
-        Necessitatibus, deserunt.</p>
+  <!-- ABOUT MODAL START -->
+<div class="container_modal" id="aboutModal">
+  <div class="modal_card">
+
+    <!-- Header -->
+    <div class="modal_header">
+      <div>
+        <h2 data-i18n="modals.about.title">About AppointmentPro</h2>
+        <p class="subtitle" data-i18n="modals.about.subtitle">Built by Alejandro · AlejoDev</p>
+      </div>
+      <span class="closeBtn">&times;</span>
+    </div>
+
+    <!-- Body -->
+    <div class="modal_body">
+
+      <p data-i18n="modals.about.p1">
+        This appointment management system was designed and developed by
+        <strong>Alejandro</strong>, a fullstack developer and creator of the
+        personal brand <strong>AlejoDev</strong>.
+      </p>
+
+      <p data-i18n="modals.about.p2">
+        The platform aims to deliver a modern and scalable solution for
+        businesses that require efficient scheduling, including clinics,
+        consulting offices, beauty centers, and reservation-based services.
+      </p>
+
+      <h3 data-i18n="modals.about.featuresTitle">Key Features</h3>
+
+      <ul class="feature_list">
+        <li data-i18n="modals.about.f1">Scalable architecture with modular structure</li>
+        <li data-i18n="modals.about.f2">Secure authentication with JWT</li>
+        <li data-i18n="modals.about.f3">Clear separation of responsibilities (MVC)</li>
+        <li data-i18n="modals.about.f4">Foundation prepared for SaaS evolution</li>
+      </ul>
+
     </div>
   </div>
-
-  <!--ABOUT MODAL END-->
-
-  <!--CONTACT MODAL START-->
+</div>
+<!-- ABOUT MODAL END -->
 
   <!--CONTACT MODAL START-->
+
+<div class="container_modal" id="contactModal">
+  <div class="modal_card">
+
+    <!-- Header -->
+    <div class="modal_header">
+      <div>
+        <h2 data-i18n="modals.contact.title">Contact</h2>
+        <p class="subtitle" data-i18n="modals.contact.subtitle">Send a message to Alejandro · AlejoDev</p>
+      </div>
+      <span class="closeBtn">&times;</span>
+    </div>
+
+    <!-- Body -->
+    <div class="modal_body">
+
+      <form id="contactForm" class="contact_form">
+
+        <div class="form_group">
+          <label for="contactName" data-i18n="modals.contact.name">Full Name</label>
+          <input type="text" id="contactName" required>
+        </div>
+
+        <div class="form_group">
+          <label for="contactEmail" data-i18n="modals.contact.email">Email Address</label>
+          <input type="email" id="contactEmail" required>
+        </div>
+
+        <div class="form_group">
+          <label for="contactSubject" data-i18n="modals.contact.subject">Subject</label>
+          <input type="text" id="contactSubject">
+        </div>
+
+        <div class="form_group">
+          <label for="contactMessage" data-i18n="modals.contact.message">Message</label>
+          <textarea id="contactMessage" rows="4" required></textarea>
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- Footer (MISMA estructura que About) -->
+    <div class="modal_footer">
+      <button type="submit" form="contactForm" class="cta_button" data-i18n="modals.contact.button">
+        Send Message
+      </button>
+    </div>
+
+  </div>
+</div>
+<!-- CONTACT MODAL END -->
+
+<!-- PRIVACY MODAL -->
+<div class="container_modal" id="modal-privacidad">
+  <div class="modal_card">
+
+    <div class="modal_header">
+      <div>
+        <h2 data-i18n="modals.privacy.title">Privacy Policy</h2>
+      </div>
+      <span class="closeBtn">&times;</span>
+    </div>
+
+    <div class="modal_body" >
+      <p data-i18n="modals.privacy.p1">We respect your privacy. All collected information is used solely to improve our services.</p>
+      <p data-i18n="modals.privacy.p2">We do not share personal data with third parties without your consent. We implement security measures to protect your information.</p>
+      <p data-i18n="modals.privacy.p3">You may request the deletion of your data at any time.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div class="container_modal" id="modal-terminos">
+  <div class="modal_card">
+
+    <div class="modal_header">
+      <div>
+        <h2 data-i18n="modals.terms.title">Terms of Service</h2>
+      </div>
+      <span class="closeBtn">&times;</span>
+    </div>
+
+    <div class="modal_body">
+      <p data-i18n="modals.terms.p1">By using this site, you agree to comply with our rules and conditions.</p>
+      <p data-i18n="modals.terms.p2">We reserve the right to modify content and services without prior notice.</p>
+      <p data-i18n="modals.terms.p3">Improper use of the platform may result in suspension of access.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECURITY MODAL -->
+<div class="container_modal" id="modal-seguridad">
+  <div class="modal_card">
+
+    <div class="modal_header">
+      <div>
+        <h2 data-i18n="modals.security.title">Security</h2>
+      </div>
+      <span class="closeBtn">&times;</span>
+    </div>
+
+    <div class="modal_body">
+      <p data-i18n="modals.security.p1">We use modern security protocols to protect information.</p>
+      <p data-i18n="modals.security.p2">All transmitted data is encrypted using HTTPS.</p>
+      <p data-i18n="modals.security.p3">We regularly review our systems to prevent vulnerabilities.</p>
+    </div>
+
+  </div>
+</div>
+
 
   <script src="js/i18n.js"></script>
   <script src="js/animations.js"></script>
