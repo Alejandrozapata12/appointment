@@ -680,13 +680,134 @@ footer {
 /* Feature list */
 
 .feature_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  justify-items: center;
+  margin: 2rem;
+
+}
+
+.feature_list li {
+  list-style-type: none;
+}
+
+
+
+
+/* ===== HEADER ===== */
+
+.tos_header_left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tos_icon {
+  width: 40px;
+  height: 40px;
+  background: #e0e7ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tos_icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #2563eb;
+}
+
+.tos_updated {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* ===== BODY ===== */
+
+.tos_body {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.tos_intro {
+  margin-bottom: 16px;
+}
+
+.tos_section {
+  margin-bottom: 14px;
+}
+
+.tos_section h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tos_list {
   padding-left: 18px;
   margin: 0;
 }
 
-.feature_list li {
-  margin-bottom: 6px;
+.tos_list li {
+  margin-bottom: 4px;
 }
+
+/* Info box */
+
+.tos_info {
+  background: #eef2ff;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #374151;
+  margin: 14px 0;
+}
+
+/* Checkbox */
+
+.tos_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+
+.tos_footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px;
+}
+
+.tos_btn_secondary {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.tos_btn_primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tos_btn_primary:hover {
+  background: #1d4ed8;
+}
+
+
 
 /* Animation */
 
@@ -751,6 +872,15 @@ footer {
   text-align: center;
 }
 
+label::before{
+  content: " ";
+}
+
+label::after{
+  content: " * ";
+  color: red;
+}
+
 
 .cta_button {
   background: #2563eb;
@@ -766,6 +896,82 @@ footer {
 .cta_button:hover {
   background: #1d4ed8;
   transform: translateY(-1px);
+}
+
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header_icon {
+  width: 42px;
+  height: 42px;
+  background: #e0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.header_icon svg {
+  width: 22px;
+  height: 22px;
+  fill: #2563eb;
+}
+
+/* ===== GRID LAYOUT ===== */
+
+.form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form_row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== INPUT WITH ICON ===== */
+
+.input_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_icon {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: #9ca3af;
+  pointer-events: none;
+}
+
+.input_wrapper input,
+.input_wrapper textarea {
+  width: 100%;
+  padding-left: 40px; /* espacio para icono */
+}
+
+/* textarea alignment */
+.textarea_wrapper {
+  align-items: flex-start;
+}
+
+.textarea_wrapper .input_icon {
+  top: 12px;
 }
 
 
@@ -927,3 +1133,162 @@ footer {
     font-size: 1.8rem;
   }
 }
+
+/*SVG MODAL STYLES*/
+
+
+.svg_arr{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  .svg_ico{
+    margin-right: 1.5rem;
+    background-color: #e0e7ff;
+    border-radius: 12px;
+    padding: 4px;
+
+    svg{
+      vertical-align: middle;
+      width: 22px;
+  height: 22px;
+    }
+  }
+}
+
+/* ===============================
+   SAAS MODAL SYSTEM
+================================= */
+
+.modal_card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.saas_header_left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.saas_icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #e0ecff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saas_icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #2563eb;
+}
+
+.saas_updated {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 3px;
+}
+
+/* BODY */
+
+.modal_body {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.saas_intro {
+  margin-bottom: 18px;
+}
+
+.saas_section {
+  margin-bottom: 18px;
+}
+
+.saas_section h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.saas_card {
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+/* LIST */
+
+.saas_list {
+  padding-left: 18px;
+}
+
+.saas_list li {
+  margin-bottom: 6px;
+}
+
+/* INFO BOX */
+
+.saas_info {
+  background: #eef2ff;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 12px;
+  margin: 16px 0;
+}
+
+/* CHECK BADGE */
+
+.saas_badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ecfdf5;
+  color: #059669;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+/* FOOTER */
+
+.saas_footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px;
+}
+
+.saas_btn_primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.saas_btn_primary:hover {
+  background: #1d4ed8;
+}
+
+.saas_btn_secondary {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+
+
+
