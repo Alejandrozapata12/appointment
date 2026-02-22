@@ -52,20 +52,3 @@ securityBtn.addEventListener("click", () => {
   securityModal.style.display = "none";
 
 });
-
-
-window.addEventListener("DOMContentLoaded", () => {
-
-  if (!localStorage.getItem("privacyAccepted")) {
-    document.getElementById("modal-privacidad").style.display = "flex";
-  }
-
-  if (!localStorage.getItem("termsAccepted")) {
-    document.getElementById("modal-terminos").style.display = "flex";
-  }
-
-  if (!localStorage.getItem("securityAcknowledged")) {
-    document.getElementById("modal-seguridad").style.display = "flex";
-  }
-
-});
